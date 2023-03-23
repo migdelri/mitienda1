@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Bootstrap conexcion -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
@@ -19,22 +20,78 @@
     </header>
   <div class="container">
     <div>
-      <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
-        <div class="container-fluid">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" aria-current="page" href="#">Inicio</a>
-            <a class="nav-item nav-link" href="#">Nosotros</a>
-            <a class="nav-item nav-link" href="#">Blog</a>
-            <a class="nav-item nav-link" href="#">Galería</a>
-            <a class="nav-item nav-link" href="#">Contacto</a>
-          </div>
-        </div>
-      </nav>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+      <!-- icono o nombre -->
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-flower1"></i>
+        <span class="text-warning">MiMarca</span>
+      </a>
+      <!-- boton del menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <!-- elementos del menu colapsable -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Renta</a></li>
+              <li><a class="dropdown-item" href="#">Equipos</a><li>   
+              <li><a class="dropdown-item" href="#">Networking</a></li>
+            </ul>
+          </li>
+        </ul>
+        <hr class="d-md-none text-white-50">
+         <!-- enlaces redes sociales -->
+        <ul class="navbar-nav  flex-row flex-wrap text-light">
+         <li class="nav-item col-6 col-md-auto p-3">
+              <i class="bi bi-twitter"></i>
+              <small class="d-md-none ms-2">Twitter</small>  
+          </li>
+          <li class="nav-item col-6 col-md-auto p-3">
+            <i class="bi bi-github"></i>
+            <small class="d-md-none ms-2">GitHub</small> 
+          </li>
+          <li class="nav-item col-6 col-md-auto p-3">
+            <i class="bi bi-whatsapp"></i>
+            <small class="d-md-none ms-2">WhatsApp</small>
+          </li>
+          <li class="nav-item col-6 col-md-auto p-3">
+            <i class="bi bi-facebook"></i>
+            <small class="d-md-none ms-2">Facebook</small>
+          </li>
+        </ul>
+       <!--boton Informacion -->
+        <form class="d-flex">
+          <button class="btn btn-outline-warning d-none d-md-inline-block " type="submit">Informacion</button>
+        </form> 
+      </div>
+      </div>  
+    </nav>
       <img class="img-fluid" width= "100%" src="principal.jpg">
     </div>
-    <div>
     <h2 class="container display-5">Nuestros Productos</h2>
-    <div class="card mb-3" >
+    <div class="card md-3">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="producto1.jpg" class="img-fluid rounded-start" alt="producto 1">
@@ -49,8 +106,10 @@
         </div>
       </div>
     </div>
+
+    <div>
      <div class="card-group">
-      <div class="card text-center" style="width: 8rem;">
+      <div class="card text-center" >
         <img src="producto2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Producto 2</h5>
@@ -59,7 +118,7 @@
           <a href="#" class="card-link btn btn-secondary mt-auto">Agregar al carrito</a>
         </div>
       </div>
-      <div class="card text-center" style="width: 8rem;">
+      <div class="card text-center" >
         <img src="producto3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Producto 3</h5>
@@ -232,7 +291,7 @@
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
     © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <a class="text-reset fw-bold" href="">Miguel Del Rio Ramirez</a>
   </div>
   <!-- Copyright -->
 </footer>
