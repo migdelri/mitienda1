@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Raleway:ital@0;1&display=swap');
+
+
+html {
+  /* display: flex;
+    font-size: 62.5%;*/
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+   
+    padding: 0;
+    margin: 0;
+   /* display: flex;*/
+    justify-content: center;
+  }
+  
+  h1, h2, h5,h6{
+    text-align: center;
+   
+   }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display SC', serif;
+    text-transform: uppercase;
+    
+  }
+
+  nav{
+    color: #037BC0;
+  }
+ 
+  .container {
+    /*color: white;*/
+    /*font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-wrap: wrap;*/
+    max-width: 1000px;
+    margin: 0 auto; 
+    /*background: gray;*/
+
+  }
+
+  p{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+  }
+  
+  nav { 
+    font-size: large;  
+  }
+
+  footer {
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+  a{
+   text-decoration: none;
+   text-align: center;
+  }
+  
+
+
+ 
